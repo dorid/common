@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><sitemesh:title default="欢迎光临"/> - ${site.title} - Powered By JeeSite</title>
+	<title><sitemesh:title default="欢迎光临"/> - ${site.title} - Powered By Test</title>
 	<%@include file="/WEB-INF/views/modules/cms/front/include/head.jsp" %>
 	<!-- Baidu tongji analytics --><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?82116c626a8d504a5c0675073362ef6f";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script>
 	<sitemesh:head/>
@@ -53,7 +53,7 @@
 		</div>
 		<hr style="margin:20px 0 10px;">
 		<footer>
-			<div class="footer_nav"><a href="${ctx}/guestbook" target="_blank">公共留言</a> | <a href="${ctx}/search" target="_blank">全站搜索</a> | <a href="${ctx}/map-${site.id}${fns:getUrlSuffix()}" target="_blank">站点地图</a> | <a href="mailto:thinkgem@163.com">技术支持</a> | <a href="${pageContext.request.contextPath}${fns:getAdminPath()}" target="_blank">后台管理</a></div>
+			<div class="footer_nav"><a href="${ctx}/guestbook" target="_blank">公共留言</a> | <a href="${ctx}/search" target="_blank">全站搜索</a> | <a href="${ctx}/map-${site.id}${fns:getUrlSuffix()}" target="_blank">站点地图</a> | <a href="mailto: ">技术支持</a> | <a href="${pageContext.request.contextPath}${fns:getAdminPath()}" target="_blank">后台管理</a></div>
 			<div class="pull-right">${fns:getDate('yyyy年MM月dd日 E')}</div><div class="copyright">${site.copyright}</div>
       	</footer>
     </div> <!-- /container -->

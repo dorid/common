@@ -216,7 +216,7 @@ CKEDITOR.config =
 	/**
 	 * Sets the <code>id</code> attribute to be used on the <code>body</code> element
 	 * of the editing area. This can be useful when you intend to reuse the original CSS
-	 * file you are using on your live jeesite and want to assign the editor the same ID
+	 * file you are using on your live  and want to assign the editor the same ID
 	 * as the section that will include the contents. In this way ID-specific CSS rules will
 	 * be enabled.
 	 * @since 3.1
@@ -230,7 +230,7 @@ CKEDITOR.config =
 	/**
 	 * Sets the <code>class</code> attribute to be used on the <code>body</code> element
 	 * of the editing area. This can be useful when you intend to reuse the original CSS
-	 * file you are using on your live jeesite and want to assign the editor the same class
+	 * file you are using on your live  and want to assign the editor the same class
 	 * as the section that will include the contents. In this way class-specific CSS rules will
 	 * be enabled.
 	 * @since 3.1

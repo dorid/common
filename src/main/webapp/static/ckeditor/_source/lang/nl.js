@@ -723,7 +723,7 @@ CKEDITOR.lang['nl'] =
 		dlgTitle	: 'Over CKEditor',
 		help	: 'Bekijk de $1 voor hulp.',
 		userGuide : 'CKEditor gebruiksaanwijzing',
-		moreInfo	: 'Voor licentie informatie, bezoek onze jeesite:',
+		moreInfo	: 'Voor licentie informatie, bezoek onze :',
 		copy		: 'Copyright &copy; $1. Alle rechten voorbehouden.'
 	},
 

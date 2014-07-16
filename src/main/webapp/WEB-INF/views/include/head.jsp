@@ -22,7 +22,7 @@
 <link href="${ctxStatic}/fancyBox/source/jquery.fancybox.css" type="text/css" rel="stylesheet" />
 <script src="${ctxStatic}/fancyBox/source/jquery.fancybox.js" type="text/javascript"></script>
 
-<link href="${ctxStatic}/common/jeesite.min.css" type="text/css" rel="stylesheet" />
-<script src="${ctxStatic}/common/jeesite.min.js" type="text/javascript"></script>
+<link href="${ctxStatic}/common/ssa.min.css" type="text/css" rel="stylesheet" />
+<script src="${ctxStatic}/common/ssa.min.js" type="text/javascript"></script>
 
 <link rel="shortcut icon" href="${ctxStatic}/favicon.ico">

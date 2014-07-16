@@ -31,31 +31,12 @@
 	      	 <div class="brand">${fns:getConfig('productName')}</div>
 	         <div class="nav-collapse">
 	           <ul id="menu" class="nav">
-				 <c:set var="firstMenu" value="true"/>
-				 <c:forEach items="${fns:getMenuList()}" var="menu" varStatus="idxStatus">
-					<c:if test="${menu.parent.id eq '1' && menu.isShow eq '1'}">
-						<li class="menu ${firstMenu ? ' active' : ''}"><a class="menu" href="${ctx}/sys/menu/tree?parentId=${menu.id}" target="menuFrame" >${menu.name}</a></li>
-						<c:if test="${firstMenu}">
-							<c:set var="firstMenuId" value="${menu.id}"/>
-						</c:if>
-						<c:set var="firstMenu" value="false"/>
-					</c:if>
-				 </c:forEach>
-				 <shiro:hasPermission name="cms:site:select">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">${fnc:getSite(fnc:getCurrentSiteId()).name}<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-						<c:forEach items="${fnc:getSiteList()}" var="site"><li><a href="${ctx}/cms/site/select?id=${site.id}&flag=1">${site.name}</a></li></c:forEach>
-						</ul>
-					</li>
-				 </shiro:hasPermission>
-	           </ul>
+                   <li class="menu active"><a class="menu" href="${ctx}/sys/menu/tree" target="menuFrame" >Test</a></li>
+               </ul>
 	           <ul class="nav pull-right">
-				 <li><a href="${pageContext.request.contextPath}${fns:getFrontPath()}/index-${fnc:getCurrentSiteId()}.html" target="_blank" title="访问网站主页"><i class="icon-home"></i></a></li>
 			  	 <li id="themeSwitch" class="dropdown">
 			       	<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="主题切换"><i class="icon-th-large"></i></a>
 				    <ul class="dropdown-menu">
-				      <c:forEach items="${fns:getDictList('theme')}" var="dict"><li><a href="#" onclick="location='${pageContext.request.contextPath}/theme/${dict.value}?url='+location.href">${dict.label}</a></li></c:forEach>
 				    </ul>
 				    <!--[if lte IE 6]><script type="text/javascript">$('#themeSwitch').hide();</script><![endif]-->
 			     </li>
@@ -75,7 +56,7 @@
 	    <div class="container-fluid">
 			<div id="content" class="row-fluid">
 				<div id="left">
-					<iframe id="menuFrame" name="menuFrame" src="${ctx}/sys/menu/tree?parentId=${firstMenuId}" style="overflow:visible;"
+					<iframe id="menuFrame" name="menuFrame" src="${ctx}/sys/menu/tree" style="overflow:visible;"
 						scrolling="yes" frameborder="no" width="100%" height="650"></iframe>
 				</div>
 				<div id="openClose" class="close">&nbsp;</div>
@@ -85,7 +66,7 @@
 				</div>
 			</div>
 		    <div id="footer" class="row-fluid">
-	            Copyright &copy; 2012-${fns:getConfig('copyrightYear')} ${fns:getConfig('productName')} - Powered By <a href="https://github.com/thinkgem/jeesite" target="_blank">JeeSite</a> ${fns:getConfig('version')}
+	            Copyright &copy; 2012-${fns:getConfig('copyrightYear')} ${fns:getConfig('productName')} - Powered By Test ${fns:getConfig('version')}
 			</div>
 		</div>
 	</div>
